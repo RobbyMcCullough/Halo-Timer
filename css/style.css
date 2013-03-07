@@ -1,0 +1,199 @@
+/* CSS Reset
+---------------------------------------------------- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Fonts
+---------------------------------------------------- */
+@font-face {
+    font-family: 'LeagueGothicRegular';
+    src: url('fonts/League_Gothic-webfont.eot');
+    src: url('fonts/League_Gothic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/League_Gothic-webfont.woff') format('woff'),
+         url('fonts/League_Gothic-webfont.ttf') format('truetype'),
+         url('fonts/League_Gothic-webfont.svg#LeagueGothicRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Everything else
+---------------------------------------------------- */
+body {
+	background: #171717 url('../images/body-bg.jpg') top center no-repeat;
+}
+.clear { clear: both; }
+
+#wrap {
+	width: 810px;
+	margin: 0 auto;
+}
+
+#logo {
+  background: url('../images/logo.png');
+  width: 369px;
+  height: 88px;
+  margin: 40px auto;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.timer-row {
+  background-color: rgba(0,0,0,0.3);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.button {
+  background: url('../images/timer-bg.png');
+  color: white;
+  display: block;
+  float: left;
+  font-size: 60px;
+  font-family: 'LeagueGothicRegular', sans-serif;
+  font-weight: 800;
+  text-decoration: none;
+  text-align: center;
+  text-shadow: 2px 3px 3px rgba(0,0,0,0.6);
+  margin: 0 3% 3% 0;
+  margin: 20px 50px;
+  padding-top: 50px;
+  height: 120px;
+  width: 170px;
+
+  -webkit-transition: background 0.1s, color 0.1s;
+  -moz-transition: background 0.1s, color 0.1s;
+  -o-transition: background 0.1s, color 0.1s;
+  -ms-transition: background 0.1s, color 0.1s;
+  transition: background 0.1s, color 0.1s;
+}
+
+.going {
+	background: url('../images/timer-active-bg.png');
+  color: #38680c;
+}
+
+.almost {
+  background: url('../images/timer-almost-bg.png');
+  color: #dd1c1c;
+
+  -webkit-animation: almost-flash .7s ease-in-out .7s infinite alternate;
+  -moz-animation: almost-flash .7s ease-in-out .7s infinite alternate;
+  -ms-animation: almost-flash .7s ease-in-out .7s infinite alternate;
+  -o-animation: almost-flash .7s ease-in-out .7s infinite alternate;
+  animation: almost-flash .7s ease-in-out .7s infinite alternate;
+}
+
+.final {
+  -webkit-animation: almost-flash .3s ease-in-out .3s infinite alternate;
+  -moz-animation: almost-flash .3s ease-in-out .3s infinite alternate;
+  -ms-animation: almost-flash .3s ease-in-out .3s infinite alternate;
+  -o-animation: almost-flash .3s ease-in-out .3s infinite alternate;
+  animation: almost-flash .3s ease-in-out .3s infinite alternate;
+}
+
+#footer-credit {
+  background: url('../images/footer-credit.png');
+  margin: 30px auto;
+  width: 147px;
+  height: 55px;
+  display: block;
+}
+
+
+/* Animation Stuff
+---------------------------------------------------- */
+@keyframes "almost-flash" {
+ from {
+    background: url('../images/timer-almost-bg.png');
+    color: #dd1c1c;
+ }
+ to {
+    background: url('../images/timer-almost-dark-bg.png');
+    color: #811212;
+ }
+}
+
+@-moz-keyframes almost-flash {
+ from {
+   background: url('../images/timer-almost-bg.png');
+   color: #dd1c1c;
+ }
+ to {
+   background: url('../images/timer-almost-dark-bg.png');
+   color: #811212;
+ }
+}
+
+@-webkit-keyframes "almost-flash" {
+ from {
+   background: url('../images/timer-almost-bg.png');
+   color: #dd1c1c;
+ }
+ to {
+   background: url('../images/timer-almost-dark-bg.png');
+   color: #811212;
+ }
+}
+
+@-ms-keyframes "almost-flash" {
+ from {
+   background: url('../images/timer-almost-bg.png');
+   color: #dd1c1c;
+ }
+ to {
+   background: url('../images/timer-almost-dark-bg.png');
+   color: #811212;
+ }
+}
+
+@-o-keyframes "almost-flash" {
+ from {
+   background: url('../images/timer-almost-bg.png');
+   color: #dd1c1c;
+ }
+ to {
+   background: url('../images/timer-almost-dark-bg.png');
+   color: #811212;
+ }
+}
