@@ -81,14 +81,14 @@ body {
 .timer-row {
   background-color: rgba(0,0,0,0.3);
   border-radius: 10px;
-  margin-bottom: 20px;
+  margin: 0 25px 20px;
+  float: left;
 }
 
 .button {
   background: url('../images/timer-bg.png');
   color: white;
   display: block;
-  float: left;
   font-size: 60px;
   font-family: 'LeagueGothicRegular', sans-serif;
   font-weight: 800;
@@ -96,7 +96,7 @@ body {
   text-align: center;
   text-shadow: 2px 3px 3px rgba(0,0,0,0.6);
   margin: 0 3% 3% 0;
-  margin: 20px 50px;
+  margin: 20px 25px 45px;
   padding-top: 50px;
   height: 120px;
   width: 170px;
@@ -134,10 +134,11 @@ body {
 
 #footer-credit {
   background: url('../images/footer-credit.png');
+  display: block;
+  clear:both;
   margin: 30px auto;
   width: 147px;
   height: 55px;
-  display: block;
 }
 
 

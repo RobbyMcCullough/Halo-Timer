@@ -18,18 +18,14 @@
 
 	<a href="/" id="logo"></a>
 
-	<div class="timer-row">
-		<a href="javascript:void(0);" id="bOne" class="button">2:30</a>
-		<a href="javascript:void(0);" id="bTwo" class="button">2:40</a>
-		<a href="javascript:void(0);" id="bThree" class="button">2:00</a>
-		<div class="clear"></div>
-	</div>
-	<div class="timer-row">
-		<a href="javascript:void(0);" id="bFour" class="button">2:00</a>
-		<a href="javascript:void(0);" id="bFive" class="button">1:00</a>
-		<a href="javascript:void(0);" id="bSix" class="button">0:15</a>
-		<div class="clear"></div>
-	</div>
+	<section class="timer-row"><a href="javascript:void(0);" id="bOne" class="button">2:30</a></section>
+	<section class="timer-row"><a href="javascript:void(0);" id="bTwo" class="button">2:40</a></section>
+	<section class="timer-row"><a href="javascript:void(0);" id="bThree" class="button">2:00</a></section>
+	
+	<section class="timer-row"><a href="javascript:void(0);" id="bFour" class="button">2:00</a></section>
+	<section class="timer-row"><a href="javascript:void(0);" id="bFive" class="button">1:00</a></section>
+	<section class="timer-row"><a href="javascript:void(0);" id="bSix" class="button">0:15</a></section>
+
 
 	<a href="http://technobred.com" title="TechnoBRED - Gaming Tutorials and Community" id="footer-credit"></a>
 	<div id="dummy"></div>
