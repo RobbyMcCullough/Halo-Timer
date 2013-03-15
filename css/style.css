@@ -201,10 +201,22 @@ h1 {
   display: block;
   clear:both;
   margin: 30px auto;
+  margin-bottom: 5px;
   width: 147px;
   height: 55px;
 }
 
+#footer-source {
+  text-align: center;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+#footer-source a {
+  color: gray;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 300;
+}
 
 /* Animation Stuff
 ---------------------------------------------------- */

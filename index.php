@@ -35,18 +35,19 @@
 
 	<div class="section">
 		<div class="button" id="bOne"><input type="text" value="2:00" /></div>
-		<div class="button" id="bTwo"><input type="text" value="2:20" /></div>
-		<div class="button" id="bThree"><input type="text" value="2:00" /></div>
+		<div class="button" id="bTwo"><input type="text" value="2:00" /></div>
+		<div class="button" id="bThree"><input type="text" value="2:30" /></div>
 	</div>
 	
 	<div class="section">
 		<div class="button" id="bFour"><input type="text" value="1:00" /></div>
-		<div class="button" id="bFive"><input type="text" value="0:08" /></div>
-		<div class="button" id="bSix"><input type="text" value="0:04" /></div>
+		<div class="button" id="bFive"><input type="text" value="1:00" /></div>
+		<div class="button" id="bSix"><input type="text" value="0:30" /></div>
 	</div>
 
 
 	<a href="http://technobred.com" title="TechnoBRED - Gaming Tutorials and Community" id="footer-credit"></a>
+	<p id="footer-source"><a href="https://github.com/mybbor/Halo-Timer" target="_blank">view source</a></p>
 	<audio id="soundHandle"></audio>
 </div> <!-- END wrap -->
 

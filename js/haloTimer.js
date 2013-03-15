@@ -146,17 +146,15 @@ $(document).ready(function () {
         }
     });
 
-
-
-
     // Bind keypress to setTimer
     $('body').keyup(function (event) {
-        if (event.keyCode === 49 || event.keyCode === 103) setTimer('bOne');
-        if (event.keyCode === 50 || event.keyCode === 104) setTimer('bTwo');
-        if (event.keyCode === 51 || event.keyCode === 105) setTimer('bThree');
-        if (event.keyCode === 52 || event.keyCode === 100) setTimer('bFour');
-        if (event.keyCode === 53 || event.keyCode === 101) setTimer('bFive');
-        if (event.keyCode === 54 || event.keyCode === 102) setTimer('bSix');
+        console.log(event.keyCode);
+        if (event.keyCode === 49 || event.keyCode === 100) setTimer('bOne');
+        if (event.keyCode === 50 || event.keyCode === 101) setTimer('bTwo');
+        if (event.keyCode === 51 || event.keyCode === 102) setTimer('bThree');
+        if (event.keyCode === 52 || event.keyCode === 97) setTimer('bFour');
+        if (event.keyCode === 53 || event.keyCode === 98) setTimer('bFive');
+        if (event.keyCode === 54 || event.keyCode === 99) setTimer('bSix');
     });
 
 });
