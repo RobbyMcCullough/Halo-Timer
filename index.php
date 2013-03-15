@@ -13,22 +13,41 @@
 	<link rel="stylesheet" href="css/style.css"></style>
 </head>
 <body>
-
+<div id="bg-image"></div>
 <div id="wrap">
 
 	<a href="/" id="logo"></a>
-
-	<section class="timer-row"><a href="javascript:void(0);" id="bOne" class="button">2:30</a></section>
-	<section class="timer-row"><a href="javascript:void(0);" id="bTwo" class="button">2:40</a></section>
-	<section class="timer-row"><a href="javascript:void(0);" id="bThree" class="button">2:00</a></section>
 	
-	<section class="timer-row"><a href="javascript:void(0);" id="bFour" class="button">2:00</a></section>
-	<section class="timer-row"><a href="javascript:void(0);" id="bFive" class="button">1:00</a></section>
-	<section class="timer-row"><a href="javascript:void(0);" id="bSix" class="button">0:15</a></section>
+	<div id="instructions">
+		<p>
+			Use this timer to track weapon respawn times<br />
+			Buttons 1-6 start &amp; start the corresponding timer<br />
+			Click the timestamp to change the time
+		</p>
+	</div>
+
+	<div id="settings">
+		<div><button id="sound" class="checkbox checked"></button> Enable Sound</div>
+		<div><button id="looping" class="checkbox"></button>  Loop Timers</div>
+	</div>
+
+	<div class="clear"></div>
+
+	<div class="section">
+		<div class="button" id="bOne"><input type="text" value="2:00" /></div>
+		<div class="button" id="bTwo"><input type="text" value="2:20" /></div>
+		<div class="button" id="bThree"><input type="text" value="2:00" /></div>
+	</div>
+	
+	<div class="section">
+		<div class="button" id="bFour"><input type="text" value="1:00" /></div>
+		<div class="button" id="bFive"><input type="text" value="0:08" /></div>
+		<div class="button" id="bSix"><input type="text" value="0:04" /></div>
+	</div>
 
 
 	<a href="http://technobred.com" title="TechnoBRED - Gaming Tutorials and Community" id="footer-credit"></a>
-	<div id="dummy"></div>
+	<audio id="soundHandle"></audio>
 </div> <!-- END wrap -->
 
 </body>
